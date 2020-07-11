@@ -1,21 +1,21 @@
 {
-  "name": "WTF: PWA",
-  "short_name": "WTF: PWA",
-  "theme_color": "#2D2241",
-  "background_color": "#2D2241",
+  "name": "hydrapp",
+  "short_name": "hydrapp",
+  "theme_color": "#3767AD",
+  "background_color": "#3767AD",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/wtf-webpack-starter/",
-  "start_url": "/wtf-webpack-starter/",
+  "scope": "/hydrapp/",
+  "start_url": "/hydrapp/",
   "icons": [
     {
-      "src": "pwa/manifest-icon-192.png",
+      "src": "pwa/water-icon-192x128.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "pwa/manifest-icon-512.png",
+      "src": "pwa/water-icon-512x341.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
