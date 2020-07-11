@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -12,10 +13,75 @@ html {
 
 body {
   background: #3767AD;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin: 64px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 55px;
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.glass {
+  position: relative;
+  &__number {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    font-size: 112px;
+    font-weight: 700;
+    margin: 0;
+    @media (min-width: 768px) {
+      font-size: 76px;
+      top: 96px;
+      left: 100px;
+    }
+  }
+  &__image {
+    width: 280px;
+    height: 280px;
+    @media (min-width: 768px) {
+      width: 240px;
+      height: 240px;
+    }
+  }
+  margin-bottom: 48px;
+}
+
+.buttons {
+  &__add {
+    display: block;
+    width: 216px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+  &__delete {
+    display: block;
+    width: 216px;
+    height: 20px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    border: transparent;
+    color: #fff;
+  }
+}
