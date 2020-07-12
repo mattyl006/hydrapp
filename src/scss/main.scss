@@ -51,11 +51,12 @@ body {
 }
 
 .header {
-  margin: 64px;
+  margin: 36px 64px 64px 64px;
   color: #fff;
   font-weight: 500;
   font-size: 55px;
   @media (min-width: 768px) {
+    margin: 64px;
     font-size: 48px;
   }
 }
@@ -66,8 +67,8 @@ body {
     display: inline-block;
     position: absolute;
     top: 100px;
-    left: 110px;
-    font-size: 112px;
+    left: 112px;
+    font-size: 90px;
     font-weight: 700;
     margin: 0;
     @media (min-width: 768px) {

@@ -14,10 +14,20 @@ let glassCount = parseInt(numberGlass.innerHTML);
 
 function correctPosition() {
     if(glassCount > 9) {
-        numberGlass.style.left = '78px';
+        if(window.matchMedia("(min-width: 768px)").matches) {
+            numberGlass.style.left = '78px';
+        }
+        else {
+            numberGlass.style.left = '90px';
+        }
     }
     else {
-        numberGlass.style.left = '100px';
+        if(window.matchMedia("(min-width: 768px)").matches) {
+            numberGlass.style.left = '100px';
+        }
+        else {
+            numberGlass.style.left = '112px';
+        }
     }
 }
 
