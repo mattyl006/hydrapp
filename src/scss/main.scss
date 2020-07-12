@@ -51,13 +51,12 @@ body {
 }
 
 .header {
-  margin: 36px 64px 64px 64px;
+  margin: 16px 64px 64px 64px;
   color: #fff;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 48px;
   @media (min-width: 768px) {
     margin: 64px;
-    font-size: 48px;
   }
 }
 
