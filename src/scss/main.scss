@@ -51,7 +51,7 @@ body {
 }
 
 .header {
-  margin: 16px 64px 64px 64px;
+  margin: 16px 64px 48px 64px;
   color: #fff;
   font-weight: 500;
   font-size: 48px;
@@ -87,7 +87,10 @@ body {
   &__water--animation {
     animation: water-animation 1s linear 1;
   }
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 }
 
 .buttons {
@@ -99,8 +102,11 @@ body {
     background-color: #fff;
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     animation: button-animation 1.5s linear infinite;
+    @media (min-width: 768px) {
+      margin-bottom: 48px;
+    }
   }
   &__delete {
     display: block;
