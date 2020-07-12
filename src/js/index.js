@@ -33,7 +33,11 @@ else {
 
 correctPosition();
 
+const audio = new Audio('drink-sound.mp3');
+
 addGlass.addEventListener('click', () => {
+    audio.load();
+    audio.play();
     glassCount = glassCount + 1;
     numberGlass.innerHTML = glassCount;
     localStorage.setItem(key, glassCount);
