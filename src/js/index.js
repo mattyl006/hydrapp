@@ -8,6 +8,7 @@ console.log('HELLO 🚀')
 const addGlass = document.querySelector('.buttons__add--js');
 const deleteGlass = document.querySelector('.buttons__delete--js');
 const numberGlass = document.querySelector('.glass__number--js');
+const water = document.querySelector('.glass__water--js');
 
 let glassCount = parseInt(numberGlass.innerHTML);
 
@@ -42,7 +43,15 @@ addGlass.addEventListener('click', () => {
     numberGlass.innerHTML = glassCount;
     localStorage.setItem(key, glassCount);
     correctPosition();
+    water.classList.add('glass__water--animation');
 })
+
+addGlass.addEventListener('mousedown', () => {
+    if(water.classList.contains('glass__water--animation')) {
+        water.classList.remove('glass__water--animation');
+    } 
+})
+
 
 deleteGlass.addEventListener('click', () => {
     if(glassCount > 0) {
