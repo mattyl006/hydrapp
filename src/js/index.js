@@ -22,8 +22,8 @@ function correctPosition() {
 
 const key = new Date().toISOString().slice(0, 10);
 
-if(localStorage.getItem(key) == '') {
-    numberGlass.innerHTML = '0';
+if(localStorage.getItem(key) == null) {
+    numberGlass.innerHTML = "0";
     glassCount = 0;
 }
 else {
