@@ -1,4 +1,4 @@
-![cover](https://wirus006.github.io/hydrapp/ogImage-water.png)
+![cover](https://wirus006.github.io/hydrapp/og.png)
 
 # hydrapp
 
